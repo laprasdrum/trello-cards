@@ -16,9 +16,8 @@ show trello board's cards via Slack App
 nvm install
 nvm use
 npm i
-cd src
 npx clasp login
-npx clasp create __your_project_name_here__
+npx clasp create __your_project_name_here__ --rootDir ./src
 ```
 
 ## deploy

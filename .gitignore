@@ -1,4 +1,4 @@
 node_modules/
 package-lock.json
 .clasp.json
-src/appsscript.json
+appsscript.json
