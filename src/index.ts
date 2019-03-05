@@ -48,7 +48,9 @@ function getListsOfBoard(id: string): [List] {
 function message(e): string {
   if (e == null || e.parameter == null || e.parameter.text == null || e.parameter.text.split(' ', 2)[1] == null) return `${MESSAGE_EMPTY_SEARCH_WORD}`
 
-  let searchingBoard = e.parameter.text.split(' ').shift().join(' ')
+  let queries = e.parameter.text.split(" ")
+  queries.shift()
+  let searchingBoard = queries
 
   let boards = getBoards()
   if (boards == null || boards.length <= 0 || boards.map(b => b.name).indexOf(searchingBoard) == -1) {
