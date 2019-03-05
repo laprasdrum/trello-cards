@@ -4,6 +4,7 @@ show trello board's cards via Slack App
 
 ## Requirements
 
+- Trello API Key & Token
 - Your Slack App with:
   - Incoming Webhook
   - Bots
